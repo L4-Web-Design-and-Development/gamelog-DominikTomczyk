@@ -7,5 +7,5 @@ export const meta: MetaFunction = () => {
 };
 
 export default function AddGame() {
-    return <div className="py-40 font-bold text-6xl text-center">Add <span className="text-cyan-500">Game</span></div>
+    return <div className="py-40 font-bold text-6xl text-center">Add <span className="text-cyan-300">Game</span></div>
 }
