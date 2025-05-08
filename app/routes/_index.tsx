@@ -6,7 +6,7 @@ import GameCard from '~/components/game_card';
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
+    { title: "Game Log" },
     { name: "description", content: "Welcome to Remix!" },
   ];
 };
@@ -28,11 +28,7 @@ export default function Index() {
     <div className="flex items-center justify-center min-h-screen">
       <div>
         <h1 className="text-4xl font-bold">Hello, GameLogger!</h1>
-        {games.map((game) => (
-          <div key={game.id}>
-            <GameCard title={game.title} added={game.createdAt}/>
-          </div>
-        ))}
+        {games.map((game) => <GameCard key={game.id} title={game.title} released={game.releaseDate} genre={game.categoryId}/>)}
       </div>
     </div>
   );
