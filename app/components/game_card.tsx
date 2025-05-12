@@ -10,16 +10,16 @@ interface GameCardProps {
 export default function GameCard(props: GameCardProps) {
     const formattedDate = props.released.slice(0, 10)
 
-    return <div className="flex flex-col w-96 h-96 bg-gray-950 items-center rounded-3xl">
-        <img src={props.imgUrl} alt="" className="max-w-96 max-h-60"/>
-        <div className="flex justify-between w-96 h-36 pb-5 px-3">
-            <div className="flex flex-col justify-between w-64">
+    return <div className="flex flex-col justify-between w-80 h-80 bg-gray-950 items-center mx-5 mb-10 overflow-clip">
+        <img src={props.imgUrl} alt="" className="h-56 rounded-3xl object-cover"/>
+        <div className="flex justify-between w-80 h-24 pt-5">
+            <div className="flex flex-col justify-between w-52 text-nowrap overflow-clip">
                 <p className="font-bold">{props.title}</p>
                 <p className="text-sm">{props.genre}</p>
                 <p className="text-sm">{formattedDate}</p>
             </div>
 
-            <div className="flex flex-col justify-around text-2xl w-32">
+            <div className="flex flex-col justify-between w-28 items-end">
                 <CustomButton title="Edit" variant="confirm_lite"/>
                 <CustomButton title="Delete" variant="cancel"/>
             </div>
