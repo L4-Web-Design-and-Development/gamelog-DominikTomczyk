@@ -7,7 +7,7 @@ export default function CustomButton(props: ButtonProps) {
     switch (props.variant) {
         case "confirm":
             return (
-                <button type="button" className="bg-cyan-300 rounded border-2 border-cyan-300 text-cyan-300 w-24 h-7 text-sm">{props.title}</button>
+                <button type="button" className="bg-cyan-300 rounded border-2 border-cyan-300 text-gray-950 w-24 h-7 text-sm">{props.title}</button>
             );
         case "confirm_lite":
             return (

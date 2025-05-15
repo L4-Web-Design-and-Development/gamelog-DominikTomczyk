@@ -14,9 +14,9 @@ export default function GameCard(props: GameCardProps) {
         <img src={props.imgUrl} alt="" className="h-56 rounded-3xl object-cover"/>
         <div className="flex justify-between w-80 h-24 pt-5">
             <div className="flex flex-col justify-between w-52 text-nowrap overflow-clip">
-                <p className="font-bold">{props.title}</p>
-                <p className="text-sm">{props.genre}</p>
-                <p className="text-sm">{formattedDate}</p>
+                <p className="font-semibold text-slate-200">{props.title}</p>
+                <p className="text-sm text-cyan-300">{props.genre}</p>
+                <p className="text-sm text-gray-400">{formattedDate}</p>
             </div>
 
             <div className="flex flex-col justify-between w-28 items-end">
