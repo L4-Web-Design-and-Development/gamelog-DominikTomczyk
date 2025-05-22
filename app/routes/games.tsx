@@ -4,6 +4,7 @@ import { json } from '@remix-run/node'
 import { useLoaderData } from '@remix-run/react'
 import GameCard from '~/components/game_card';
 import siteLogo from "~/assets/svg/gamelog-logo.svg";
+import AddGameCard from "~/components/add_game_card";
 
 export const meta: MetaFunction = () => {
   return [
@@ -41,7 +42,8 @@ export default function Games() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
-        {games.map((game) => <GameCard key={game.id} title={game.title} released={game.releaseDate} genre={game.category?.title || "No category"} imgUrl={game.imageUrl || siteLogo}/>)}
+        {games.map((game) => <GameCard key={game.id} id={game.id} title={game.title} released={game.releaseDate} genre={game.category?.title || "No category"} imgUrl={game.imageUrl || siteLogo} page="games"/>)}
+        <AddGameCard/>
       </div>
     </div>
   )

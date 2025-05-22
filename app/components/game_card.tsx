@@ -1,10 +1,12 @@
-import CustomButton from "./button";
+import { Form, Link } from "@remix-run/react";
 
 interface GameCardProps {
+    id: string;
     title: string;
     genre: string;
     released: string;
     imgUrl: string;
+    page: string;
 }
 
 export default function GameCard(props: GameCardProps) {
@@ -20,8 +22,14 @@ export default function GameCard(props: GameCardProps) {
             </div>
 
             <div className="flex flex-col justify-between w-28 items-end">
-                <CustomButton title="Edit" variant="confirm_lite"/>
-                <CustomButton title="Delete" variant="cancel"/>
+                <Link to={`/edit_game/${props.page}/${props.id}`} className="flex bg-gray-950 rounded border-2 border-cyan-300 text-cyan-300 w-24 h-7 text-sm justify-center items-center">
+                    Edit
+                </Link>
+                <Form action={`/delete_game/${props.page}/${props.id}`} method="post">
+                    <button type="submit" className="bg-gray-950 rounded border-2 border-red-300 text-red-300 w-24 h-7 text-sm">
+                        Delete
+                    </button>
+                </Form>
             </div>
         </div>
     </div>
