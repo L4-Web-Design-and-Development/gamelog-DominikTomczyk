@@ -52,7 +52,7 @@ export default function Index() {
         <Link to="/games" className="text-slate-200 text-sm">See all</Link>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
-        {topGames.map((game) => <GameCard key={game.id} id={game.id} title={game.title} released={game.releaseDate} genre={game.category?.title || "No category"} imgUrl={game.imageUrl || siteLogo} page={"home"}/>)}
+        {topGames.map((game) => <GameCard key={game.id} id={game.id} title={game.title} released={game.releaseDate} genre={game.category?.title || "No category"} imgUrl={game.imageUrl || siteLogo} page={"0"}/>)}
       </div>
     </div>
   );

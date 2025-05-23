@@ -61,7 +61,7 @@ export async function action({ request, params }: ActionFunctionArgs) {
 
   prisma.$disconnect();
 
-  if (sourcePage === "home") {
+  if (sourcePage === "0") {
     return redirect("/");
   } else {
     return redirect("/games");
@@ -205,7 +205,7 @@ export default function EditGame() {
               Update Game
             </button>
 
-            <Link to={sourcePage === "home" ? "/" : "/games"} className="flex bg-gray-950 rounded-md border-2 border-red-300 text-red-300 w-80 h-12 justify-center items-center font-semibold my-1">
+            <Link to="/" className="flex bg-gray-950 rounded-md border-2 border-red-300 text-red-300 w-80 h-12 justify-center items-center font-semibold my-1">
               Cancel
             </Link>
           </div>

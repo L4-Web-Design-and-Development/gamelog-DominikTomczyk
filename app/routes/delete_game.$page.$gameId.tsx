@@ -17,7 +17,7 @@ export async function action({ params }: ActionFunctionArgs) {
 
   // Redirect back to the home page
 
-  if (sourcePage === "home") {
+  if (sourcePage === "0") {
     return redirect("/");
   } else {
     return redirect("/games");
