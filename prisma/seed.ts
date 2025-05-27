@@ -178,6 +178,21 @@ async function seed() {
 
   console.log("Games and categories linked successfully");
 
+  const blogPosts = [
+    {
+      title: "Gamelog's Full Release!",
+      body:"We are happy to announce that Gamelog is now fully operational! We hope you will find this site useful for your gaming endeavours. And if you feel like it, go ahead and share your collection with us on our socials. Happy game logging!",
+      postedAt: new Date("2025-05-27"),
+      author:"Gamelog Team",
+    },
+  ];
+
+  for (const blogPost of blogPosts) {
+    await prisma.blogPost.create({ data: blogPost });
+  }
+
+  console.log("Blog Posts created successfully");
+
 
   console.log("Seed data created successfully");
 }
