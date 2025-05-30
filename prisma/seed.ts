@@ -10,7 +10,7 @@ async function seed() {
       price: 59.99,
       rating: 4.9,
       releaseDate: new Date("2017-03-03"),
-      imageUrl: "https://res.cloudinary.com/du5mn8uih/image/upload/v1746700465/zelda_svev5j.png",
+      imageUrl: "https://res.cloudinary.com/du5mn8uih/image/upload/v1748440942/zelda_iiq0r3.jpg",
     },
     {
       title: "The Witcher 3: Wild Hunt",
@@ -19,7 +19,7 @@ async function seed() {
       price: 39.99,
       rating: 4.8,
       releaseDate: new Date("2015-05-19"),
-      imageUrl: "https://res.cloudinary.com/du5mn8uih/image/upload/v1746700691/Witcher_3_cover_art_anu3hv.jpg",
+      imageUrl: "https://res.cloudinary.com/du5mn8uih/image/upload/v1748440895/witcher_aamdol.png",
     },
     {
       title: "Red Dead Redemption 2",
@@ -61,7 +61,7 @@ async function seed() {
       price: 59.99,
       rating: 4.0,
       releaseDate: new Date("2020-12-10"),
-      imageUrl: "https://res.cloudinary.com/du5mn8uih/image/upload/v1746701137/Cyberpunk_2077_box_art_blzftw.jpg",
+      imageUrl: "https://res.cloudinary.com/du5mn8uih/image/upload/v1748440911/cyberpunk_p1phm1.jpg",
     },
     {
       title: "Among Us",
@@ -79,7 +79,7 @@ async function seed() {
       price: 59.99,
       rating: 4.9,
       releaseDate: new Date("2020-03-20"),
-      imageUrl: "https://res.cloudinary.com/du5mn8uih/image/upload/v1746701286/Animal_Crossing_New_Horizons_ry4a6o.jpg",
+      imageUrl: "https://res.cloudinary.com/du5mn8uih/image/upload/v1748440918/animal_crossing_owptpo.jpg",
     },
     {
       title: "Hades",
@@ -88,7 +88,7 @@ async function seed() {
       price: 24.99,
       rating: 4.9,
       releaseDate: new Date("2020-09-17"),
-      imageUrl: "https://res.cloudinary.com/du5mn8uih/image/upload/v1746701385/Hades_Pack_Art_tu3ykj.webp",
+      imageUrl: "https://res.cloudinary.com/du5mn8uih/image/upload/v1748440918/hades_mmqwqx.jpg",
     },
     {
       title: "Horizon: Zero Dawn",
